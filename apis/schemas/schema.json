@@ -1,0 +1,21 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "id" : "http://www.openapplications.org/oagis/10",
+  "required" : [ "purchaseOrder" ],
+  "additionalProperties" : false,
+  "properties" : {
+    "typeCode" : {
+      "description" : "valid types include a, b, and c",
+      "$ref" : "#/definitions/token"
+    },
+    "actionCode" : {
+      "description" : "options include d, e, and f",
+      "$ref" : "#/definitions/token"
+    }
+  },
+  "definitions" : {
+    "token" : {
+      "type" : "string"
+    }
+  }
+}
